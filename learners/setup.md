@@ -2,91 +2,85 @@
 title: Setup
 ---
 
-Please follow the steps below and install the required software **before** the scheduled workshop.
+Please follow the steps below **before** the scheduled workshop. If you encounter problems, contact
+your own IT support with at least one week to spare.
 
-<!--
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+For the live workshop you will be given an individual username, IP address and password to log in
+to a remote [Nectar](https://cloud.nectar.org.au/) instance. No data needs to be downloaded for the
+live delivery workshop — everything is already set up on the remote machine. The instructions below
+cover the software you need locally, plus how to complete the workshop independently.
 
-## Data Sets
-
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
--->
 ## Software Setup
-
-We use VS Code for general coding. Make sure to install VS Code for your operating system following the instructions below:
-
-- [Windows](https://code.visualstudio.com/docs/setup/windows)
-- [macOS](https://code.visualstudio.com/docs/setup/mac)
-- [Linux](https://code.visualstudio.com/docs/setup/linux)
-
 
 ::::::::::::::::: discussion
 
-### Windows users
+### Required software
 
-If you are a Windows user, you may also need WSL, the Windows Subsystem for Linux. WSL will allow you to use the Terminal from within VS Code and to execute UNIX style commands.
+You need a **terminal** to log in to the remote machine, and (optionally) a **file-transfer**
+program for the last section.
 
-Follow the [official instructions here.](https://learn.microsoft.com/en-us/windows/wsl/install)
+- **macOS / Linux**: use the built-in `Terminal` app — no installation required.
+- **Windows**: install a terminal emulator such as [PuTTY](https://www.putty.org/) (free and
+  open-source).
+- **File transfers (all platforms)**: install [FileZilla](https://filezilla-project.org/) for
+  Section 8.
 
-After installing WSL, you will also need to install [GitBash](https://gitforwindows.org/).
+:::::::::::::::::::::::::::::
 
-After installing GitBash, change the default Terminal executable on VS Code:
+## Connecting to the remote machine
 
-1. Open VS Code.
-2. From the `View` menu select `Command Palette --> Terminal: Select Default Profile`.
-3. Select `GitBash` as the default profile.
+This workshop runs on a Nectar instance. Full, step-by-step login instructions (for both macOS and
+Windows) are in the Melbourne Bioinformatics **Intro to the Nectar Cloud** lesson:
 
-✅ You're all set to use VS Code with GitBash on Windows. 
+- [Logging on to a Nectar instance](https://melbournebioinformatics.github.io/nectar-instances/)
 
-::::::::::::::::::::::::::::
+Your username, the instance IP address and your password will be provided at the start of the
+workshop.
 
+## Slides
 
-## Environment management with conda
+The slides presented during this workshop are available here:
+[PDF](files/unix_intro_slides.pdf) / [PPTX](files/unix_intro_slides.pptx).
 
-For certain workshops, you may need to install [conda](https://docs.conda.io/en/latest/), an open-source software and package management system. This is usually necessary when working with Python code.
+## Completing the workshop independently
 
-Our preferred flavour of conda is [miniforge](https://github.com/conda-forge/miniforge), but you could also use [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
+The remote machines are only provided for live workshop participants. You can still complete the
+workshop on your own using the data provided.
 
-[Click here and follow the miniforge installation instructions for your OS.](https://conda-forge.org/download/)
+Download the data: [unix-intro-data.zip](data/unix-intro-data.zip) (also available from
+[Zenodo](https://zenodo.org/record/7349747)). Unzip it, then follow the OS-specific instructions
+below before heading to the hands-on sections.
 
+:::::::::::::::: spoiler
 
-<!--
-READ HERE FOR OS-SPECIFIC INSTRUCTIONS
+### macOS / Linux
 
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
--->
+Open the `Terminal` app. Change into the unzipped data directory, replacing `PATH_TO_DIRECTORY`
+with its location (tip: drag the folder from Finder into the Terminal to paste its path):
 
-<!--
+```bash
+cd PATH_TO_DIRECTORY
+```
+
+Confirm you are in the right place:
+
+```bash
+pwd
+```
+
+If the output ends in `/unix_intro_data`, you're ready — continue with the hands-on sections.
+
+::::::::::::::::::::::::
+
 :::::::::::::::: spoiler
 
 ### Windows
 
-Use PuTTY
+We will use [binder](https://mybinder.org/), which builds a live environment from a repository so
+you can run Unix commands in your web browser.
+
+[Launch the binder.](https://mybinder.org/v2/gh/melbournebioinformatics/training-infrastructure/HEAD)
+Be patient — it can take a few minutes to set up. Once it has launched, select *Terminal* from the
+bottom left-hand corner of the main page. You can now continue with the hands-on sections.
 
 ::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
-
-
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
--->
-
