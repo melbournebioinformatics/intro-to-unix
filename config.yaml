@@ -8,36 +8,36 @@
 # mig: Melbourne Integrative Genomics
 # wehi: Walter and Eliza Hall Institute
 # abacbs: Australian Bioinformatics and Computational Biology Society
-carpentry: 'uom'
+carpentry: 'mb'
 
 # Alt-text description of the lesson.
-carpentry_description: 'Lesson Description' # FIXME
+carpentry_description: 'A hands-on introduction to the Unix command line for bioinformatics.'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'Introduction to Unix'
 
 # Date the lesson was created ('YYYY-MM-DD', this is empty by default)
-created: ~ # FIXME
+created: '2022-11-01'
 
 # Comma-separated list of keywords for the lesson. Avoid words in the title.
-keywords: 'software, data, lesson' # FIXME
+keywords: 'unix, command line, shell, bash, terminal, bioinformatics'
 
 # Life cycle stage of the lesson
 # refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
 # possible values: pre-alpha, alpha, beta, stable
-life_cycle: 'pre-alpha' # FIXME
+life_cycle: 'beta'
 
 # License of the lesson
 license: 'CC-BY 4.0'
 
 # Link to the source repository for this lesson
-source: 'https://github.com/melbournebioinformatics/workbench-template-rmd' # FIXME
+source: 'https://github.com/melbournebioinformatics/intro-to-unix'
 
 # Default branch of your lesson
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'fixme@fixme.org' # FIXME
+contact: 'bioinformatics-training@unimelb.edu.au'
 
 # Navigation ------------------------------------------------
 #
@@ -62,8 +62,16 @@ contact: 'fixme@fixme.org' # FIXME
 # - another-learner.md
 
 # Order of episodes in your lesson
-episodes: 
-- introduction.md
+episodes:
+- 01-introduction.md
+- 02-getting-started.md
+- 03-exploring-directories.md
+- 04-making-changing-directories.md
+- 05-viewing-manipulating-files.md
+- 06-removing-files.md
+- 07-searching-files.md
+- 08-putting-it-together.md
+- 09-transferring-files.md
 
 # Information for Learners
 learners: 
