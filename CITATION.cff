@@ -5,7 +5,7 @@
 # ensuring that the author list and other fields remain accurate.
 
 cff-version: 1.2.0
-title: FIXME
+title: Introduction to Unix
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +13,15 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Steven
+    family-names: Morgan
+    affiliation: Melbourne Bioinformatics, University of Melbourne
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  A hands-on introduction to the Unix command line for
+  bioinformatics. Designed for participants with little or no
+  command-line experience, it covers connecting to a Unix
+  machine, navigating and organising the file system, viewing
+  and manipulating files, file permissions, searching with
+  grep, pipes and redirection, and transferring files between
+  local and remote machines.
 license: CC-BY-4.0
